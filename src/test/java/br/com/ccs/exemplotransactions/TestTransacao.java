@@ -3,7 +3,7 @@ package br.com.ccs.exemplotransactions;
 import br.com.ccs.exemplotransactions.entities.Comentario;
 import br.com.ccs.exemplotransactions.entities.Post;
 import br.com.ccs.exemplotransactions.repositories.RegistroAtividadeRepository;
-import br.com.ccs.exemplotransactions.services.CcsNotFoundException;
+import br.com.ccs.exemplotransactions.exceptions.CcsNotFoundException;
 import br.com.ccs.exemplotransactions.services.PostService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -16,7 +16,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-public class TesteTransacao {
+class TestTransacao {
 
     @Autowired
     private PostService service;

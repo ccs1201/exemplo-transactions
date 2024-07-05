@@ -1,6 +1,7 @@
 package br.com.ccs.exemplotransactions.services;
 
 import br.com.ccs.exemplotransactions.entities.Post;
+import br.com.ccs.exemplotransactions.exceptions.CcsNotFoundException;
 import br.com.ccs.exemplotransactions.repositories.PostRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
